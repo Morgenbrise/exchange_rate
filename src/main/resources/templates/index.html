@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <script src="/js/index.js" defer></script>
+    <title>Title</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>환율 계산</h1>
+        </header>
+
+        <section>
+            <article>
+                <p>송금국가 : </p>
+                <p>미국(USD)</p>
+            </article>
+            <article>
+                <p>수취국가 : </p>
+                <select id="country">
+                    <option value="KRW" selected>한국(KRW)</option>
+                    <option value="JPY">일본(JPY)</option>
+                    <option value="PHP">필리핀(PHP)</option>
+                </select>
+            </article>
+            <article>
+                <p>환율 : </p>
+                <p>
+                    <span id="exchange-rate-amount">1,119.93</span>
+                    <span id="country-code"> KRW/USD</span>
+                </p>
+            </article>
+            <article>
+                <p>송금액 : </p>
+                <input type="number" id="price" value="">
+                <p> USD</p>
+            </article>
+        </section>
+
+        <section>
+            <button type="button" id="calculation" >Submit</button>
+        </section>
+
+        <section id="converted-result">
+            <p>수취금액은 <span id="converted-amount"></span> <span id="converted-country"></span> 입니다.</p>
+        </section>
+    </main>
+</body>
+</html>

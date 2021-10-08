@@ -1,0 +1,15 @@
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    check-template-location: true
+    cache: false
+
+  devtools:
+    livereload:
+      enabled: true
+
+property:
+  api:
+    currencylayer:
+      key: [api_key]
